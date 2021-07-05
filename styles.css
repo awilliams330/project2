@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
+  background: #0D4260;
+}
+
+h1 {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+
+h2 {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+.footer > p {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.my-info > p {
+  padding-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  }
+
+p {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+input,
+textarea
+ {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  background: #D8D8D8;
+  border: 1px solid #000000;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+div {
+  padding-left: 60px;
+}
+
+
+input[type=submit] {
+  background: #F58B8B;
+  font-weight: bold;
+}
+
+.menu > ul > li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 24%;
+  text-align: center;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.menu ul li a {
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #F58B8B;
+}
+
+
+.menu {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #E5E5E5;
+  padding-left: 10px;
+}
+
+img {
+  display: inline;
+  min-width: 200px;
+}
+
+form {
+  position: relative;
+  right: 100px;
+  float: left;
+}
+
+.my-info {
+  padding-left: 60px;
+  min-width: 300px;
+}
+
+.my-info > p > a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #E5E5E5;
+}
+
+.about-image {
+  float: left;
+  padding-right: 40px;
+}
+
+.about-image > p {
+  text-align: left;
+  padding-left: 55px;
+  box-shadow: 2px 2px white;
+  border-radius: 4px;
+}
+
+.about > p {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.about::after {
+  content: "Yes, I'm that dog mom.";
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: lightblue;
+  padding-top: 15px;
+}
+
+.home-logo {
+  position: absolute;
+  margin-left: 400px;
+  margin-right: 400px;
+  animation: float 2s linear;
+}
+
+.intro {
+  margin: 0 auto;
+  padding-top: 400px;
+  animation: fade 7s;
+}
+
+div.gallery img {
+  width: 300px;
+  height: 200px;
+  padding-left: 10px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.my-info img {
+  transition: 1s ease;
+}
+
+.my-info img:hover {
+  border-radius:50%;
+  transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+@keyframes float {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
