@@ -250,7 +250,6 @@ div.gallery img {
 	}
 
 
-
 	.desktop-menu {
 		display: block;
 		max-width: 100%;
@@ -267,8 +266,8 @@ div.gallery img {
 
 	.desktop-menu ul li a {
 		color: black;
-		display: block;
 		text-decoration: none;
+		font-size: 22px;
 	}
 
 	.desktop-menu ul li a:hover {
@@ -283,9 +282,51 @@ div.gallery img {
 		text-decoration: none;
 	}
 
+	h1 {
+		font-size: 30px;
+	}
+
+	h1.intro {
+		font-size: 40px;
+		padding-top: 19%;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.about h2
+	{
+		text-align: center;
+		padding-bottom: 1%;
+	}
+
+	.about p {
+		font-size: 18px;
+	}
+
 	section > p {
 		padding: 2% 0;
 	}
+
+	div.gallery img {
+    width: 77%;
+    height: 33%;
+    padding-left: 10px;
+}
+
+	figure img {
+		min-width: 50%;
+	}
+
+	.about {
+		padding: 3% 2%;
+	}
+
+	aside {
+    text-align: center;
+    padding-top: 5%;
+}
 }
 
 /* *********************** END MIN WIDTH 600 MEDIA QUERY ******************************** */
