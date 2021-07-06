@@ -168,8 +168,8 @@ img {
 }
 
 .my-info {
-  padding-left: 60px;
-  min-width: 300px;
+  padding-left: 3%;
+  min-width: 39%;
 }
 
 .my-info > p > a {
@@ -177,28 +177,6 @@ img {
   font-size: 20px;
   color: white;
   text-decoration: none;
-}
-
-
-.about-image {
-  float: left;
-  padding-right: 40px;
-}
-
-.about-image > p {
-  text-align: left;
-  padding-left: 55px;
-  box-shadow: 2px 2px white;
-  border-radius: 4px;
-}
-
-.about > p {
-  text-align: left;
-  padding-top: 30px;
-}
-
-.intro {
-  margin: 0 auto;
 }
 
 div.gallery img {
@@ -315,17 +293,32 @@ div.gallery img {
 /* *********************** START MIN WIDTH 850 MEDIA QUERY ******************************** */
 @media (min-width: 850px) {
 
-
-	footer {
-		clear: both;
+	h1 {
+		font-size: 35px;
+		padding-top: 2%;
 	}
 
 	h2 {
 		font-size: 30px;
 	}
 
+	section.about {
+		float: right;
+		width: 57%;
+	}
+
+	figure {
+		padding-left: 3%;
+	}
+
 	section > p {
 		font-size: 20px;
+	}
+
+	.contact-page {
+		text-align: left;
+		display: flex;
+		justify-content: center;
 	}
 
 }
@@ -372,11 +365,7 @@ div.gallery img {
     justify-content: center;
 	}
 
-	.contact-page {
-		text-align: left;
-		display: flex;
-		justify-content: center;
-	}
+
 
 	.my-info p {
 		padding-top: 3%;
