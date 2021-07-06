@@ -46,14 +46,12 @@ body.fadeOut{
 
 h1 {
   font-family: 'Reem Kufi', sans-serif;
-  font-size: 60px;
   color: white;
   text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Reem Kufi', sans-serif;
-  font-size: 45px;
   color: white;
 }
 
@@ -189,57 +187,41 @@ div.gallery img {
   text-align: center;
 }
 
-.figure img {
-  transition: 1s ease;
-}
-
-.figure img:hover {
-  border-radius:50%;
-  transition: 1s ease;
-}
 
 
-/* ***********************HAMBURGER MENU STYLES******************************** */
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:5px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  right:0;
-  padding:7px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:3em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
-.menu a{text-decoration:none; color:#666;}
-.menu a:hover{text-decoration:none; color:#666;}
+/* *********************** START MIN WIDTH 320 MEDIA QUERY ******************************** */
 
-/* ***********************HAMBURGER MENU STYLES******************************** */
+@media (min-width: 320px) {
+
+	h1.intro {
+		padding-top: 50%;
+	}
+
+	.about {
+		padding: 3% 2%;
+	}
+
+	.about h2 {
+		text-align: center;
+		padding-bottom: 1%;
+	}
+
+	aside {
+		padding: 2%;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+
+	div.container {
+		text-align: left;
+	}
+
+
+}
+
+/* *********************** END MIN WIDTH 320 MEDIA QUERY ******************************** */
 
 
 /* *********************** START MIN WIDTH 600 MEDIA QUERY ******************************** */
@@ -255,13 +237,11 @@ div.gallery img {
 		max-width: 100%;
 		background: #e5e5e5;
 		padding: 2%;
-		font-size: 20px;
 	}
 
 	.desktop-menu ul {
 		display: flex;
 		justify-content: space-evenly;
-		font-size: 30px;
 }
 
 	.desktop-menu ul li a {
@@ -309,15 +289,6 @@ div.gallery img {
 		padding: 2% 0;
 	}
 
-	div.gallery img {
-    width: 77%;
-    height: 33%;
-    padding-left: 10px;
-}
-
-	figure img {
-		min-width: 50%;
-	}
 
 	.about {
 		padding: 3% 2%;
@@ -339,17 +310,38 @@ div.gallery img {
 		padding-top: 2%;
 	}
 
+	h1.intro {
+		padding-top: 8%;
+	}
+
+
 	h2 {
 		font-size: 30px;
 	}
+
+
+		.desktop-menu ul li a {
+			color: black;
+			text-decoration: none;
+			font-size: 30px;
+		}
 
 	section.about {
 		float: right;
 		width: 57%;
 	}
 
+	.about h2
+	{
+		text-align: left;
+	}
+
 	figure {
 		padding-left: 3%;
+	}
+
+	figcaption {
+		text-align: left;
 	}
 
 	section > p {
@@ -379,11 +371,20 @@ div.gallery img {
 		font-size: 45px;
 	}
 
+	h1.intro {
+		font-size: 48px;
+		padding-top: 11%;
+	}
 
 
 	h2 {
 		font-size: 37px;
 	}
+
+
+		.desktop-menu ul li a {
+			font-size: 35px;
+		}
 
 	section > p {
 		font-size: 25px;
@@ -395,10 +396,6 @@ div.gallery img {
 	}
 
 
-	figure {
-		padding-left: 11%;
-	}
-
 	section.images {
     display: flex;
     flex-wrap: wrap;
@@ -407,9 +404,13 @@ div.gallery img {
 	}
 
 
-
 	.my-info p {
 		padding-top: 3%;
+	}
+
+	figcaption {
+		text-align: left;
+		padding-left: 4%;
 	}
 
 }
