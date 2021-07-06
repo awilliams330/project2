@@ -35,6 +35,12 @@ body {
   background: #0D4260;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #D8D8D8;
+	transition: opacity 1s ease-out;
+	opacity: 1;
+
+}
+body.fadeOut{
+	opacity:0;
 }
 
 
@@ -102,6 +108,7 @@ main {
 .menu a:hover{text-decoration:none; color:#666;}
 
 /* ***********************HAMBURGER MENU STYLES******************************** */
+
 
 .home-logo {
 	display: block;
@@ -190,7 +197,6 @@ img {
   padding-top: 30px;
 }
 
-
 .intro {
   margin: 0 auto;
 }
@@ -257,12 +263,15 @@ div.gallery img {
 
 /* ***********************HAMBURGER MENU STYLES******************************** */
 
+
 /* *********************** START MIN WIDTH 600 MEDIA QUERY ******************************** */
 
 @media (min-width: 600px) {
 	.menu, .hamburger, .cross {
 		display: none;
 	}
+
+
 
 	.desktop-menu {
 		display: block;
@@ -294,7 +303,6 @@ div.gallery img {
 		width: 24%;
 		text-align: center;
 		text-decoration: none;
-
 	}
 
 	section > p {
@@ -337,11 +345,6 @@ div.gallery img {
 		font-size: 45px;
 	}
 
-	.desktop-menu ul {
-    display: flex;
-    justify-content: space-evenly;
-		font-size: 30px;
-}
 
 
 	h2 {
@@ -380,5 +383,9 @@ div.gallery img {
 	}
 
 }
+
+
+
+
 
 /* *********************** END MIN WIDTH 1030 MEDIA QUERY ******************************** */
