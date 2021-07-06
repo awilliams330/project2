@@ -8,50 +8,116 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/* ***********************GENERAL PAGE STYLES******************************** */
 
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  /*
+
+	font-family: 'Reem Kufi', sans-serif
+	font-family:'Josefin Sans', sans-serif
+
+  */
+
 body {
   background: #0D4260;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #D8D8D8;
 }
+
 
 h1 {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 60px;
   color: white;
   text-align: center;
-  padding: 80px;
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 45px;
   color: white;
 }
 
-.footer > p {
-  color: black;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
+main {
+	text-align: center;
 }
 
-.my-info > p {
-  padding-top: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  color: white;
-  text-align: left;
-  }
+.desktop-menu {
+	display: none;
+}
 
-p {
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+
+/* ***********************HAMBURGER MENU STYLES******************************** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* ***********************HAMBURGER MENU STYLES******************************** */
+
+.home-logo {
+	display: block;
+	width: 80%;
+	padding: 10%;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+h1 {
+ text-align: center;
+ padding: 0 11% 7% 11%;
+}
+
+footer {
+	padding: 2%;
+  background-color: #F58B8B;
   text-align: center;
+}
+
+
+.about {
+	padding: 3% 0 0 0;
+}
+
+section {
+	padding: 3%;
+}
+
+section > p {
+	padding: 3%;
 }
 
 input,
@@ -67,9 +133,6 @@ textarea
   display: inline-block;
 }
 
-div {
-  padding-left: 60px;
-}
 
 
 input[type=submit] {
@@ -77,17 +140,6 @@ input[type=submit] {
   font-weight: bold;
 }
 
-.menu > ul > li {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  width: 24%;
-  text-align: center;
-  font-family: 'Reem Kufi', sans-serif;
-  font-size: 30px;
-  padding: 5px;
-  text-decoration: none;
-}
 
 .menu ul li a {
   color: black;
@@ -100,13 +152,14 @@ input[type=submit] {
   color: #F58B8B;
 }
 
-
 .menu {
   max-width: 100%;
   margin: 0 auto;
   background: #E5E5E5;
   padding-left: 10px;
 }
+
+
 
 img {
   display: inline;
@@ -187,11 +240,11 @@ div.gallery img {
   text-align: center;
 }
 
-.my-info img {
+.figure img {
   transition: 1s ease;
 }
 
-.my-info img:hover {
+.figure img:hover {
   border-radius:50%;
   transition: 1s ease;
 }
@@ -220,3 +273,143 @@ div.gallery img {
     opacity: 1;
   }
 }
+
+/* ***********************HAMBURGER MENU STYLES******************************** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* ***********************HAMBURGER MENU STYLES******************************** */
+
+/* *********************** START MIN WIDTH 600 MEDIA QUERY ******************************** */
+
+@media (min-width: 600px) {
+	.menu, .hamburger, .cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+		max-width: 100%;
+		background: #e5e5e5;
+		padding: 2%;
+		font-size: 20px;
+	}
+
+	.desktop-menu ul li a {
+		color: black;
+		display: block;
+		text-decoration: none;
+	}
+
+	.desktop-menu ul li a:hover {
+		color: #f58b8b;
+	}
+
+	.desktop-menu > ul > li {
+		display: inline-block;
+		vertical-align: top;
+		width: 24%;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	section > p {
+		padding: 2% 0;
+	}
+}
+
+/* *********************** END MIN WIDTH 600 MEDIA QUERY ******************************** */
+
+/* *********************** START MIN WIDTH 850 MEDIA QUERY ******************************** */
+@media (min-width: 850px) {
+
+	section {
+		float: right;
+		width: 58%;
+		padding-top: 17%;
+	}
+
+	aside {
+		float: left;
+		width: 30%;
+		padding: 5% 2%;
+	}
+
+	footer {
+		clear: both;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	section > p {
+		font-size: 20px;
+	}
+
+}
+
+/* *********************** END MIN WIDTH 850 MEDIA QUERY ******************************** */
+
+/* *********************** START MIN WIDTH 1030 MEDIA QUERY ******************************** */
+
+@media (min-width: 1030px) {
+
+	h1 {
+		font-size: 40px;
+	}
+
+	section {
+		padding: 2% 5% 0 1%;
+	}
+
+	h2 {
+		font-size: 34px;
+	}
+
+	section > p {
+		font-size: 25px;
+	}
+
+	figure {
+		padding-left: 11%;
+	}
+}
+
+/* *********************** END MIN WIDTH 1030 MEDIA QUERY ******************************** */

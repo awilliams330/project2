@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VL6DV5R6BX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VL6DV5R6BX');
-    </script>
     <meta charset="utf-8">
-    <meta name="keywords" content="ui ux designer">
-    <meta name="description" content="Florida-based designer here to help you with your latest project">
+
     <title>Contact</title>
 
     <!-- Link to fonts-->
@@ -28,11 +18,26 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
+
+
   <body>
 
-    <header>
-      <nav class="menu">
+  <header>
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+      <nav class="desktop-menu">
         <ul>
           <li class="menu-item"><a href="index.html">HOME</a></li>
           <li class="menu-item"><a href="about.html">ABOUT</a></li>
@@ -44,41 +49,44 @@
 
     <main>
       <h1>CONTACT ME</h1>
-      <form id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
-      <div class="container">
+        <section>
+          <form id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+          <div class="container">
 
-       <div class="name input-section">
-        <label for="fullname" class="label_input"></label>
-          <input type="text" name="fullname" id=fullname placeholder="Name"/>
-      </div>
+           <div class="name input-section">
+            <label for="fullname" class="label_input"></label>
+              <input type="text" name="fullname" id=fullname placeholder="Name"/>
+            </div>
 
-       <div class="email input-section">
-        <label for="email" class="label_input"></label>
-          <input type="email" name="email" id=email placeholder="Email"/>
-       </div>
+           <div class="email input-section">
+            <label for="email" class="label_input"></label>
+              <input type="email" name="email" id=email placeholder="Email"/>
+           </div>
 
-       <div class="telephone input-section">
-        <label for="telephone" class="label_input"></label>
-          <input type="tel" name="telephone" id=telephone placeholder="Phone Number"/>
-       </div>
+           <div class="telephone input-section">
+            <label for="telephone" class="label_input"></label>
+              <input type="tel" name="telephone" id=telephone placeholder="Phone Number"/>
+           </div>
 
-       <div class="message input-section">
-        <label for="message" class="label_input"></label>
-          <textarea name="message" id=message rows="8" cols="50" placeholder="Message"></textarea>
-       </div>
+           <div class="message input-section">
+            <label for="message" class="label_input"></label>
+              <textarea name="message" id=message rows="8" cols="50" placeholder="Message"></textarea>
+           </div>
 
-       <div class="submit">
-        <input type="submit" value="SEND"/>
-       </div>
+           <div class="submit">
+            <input type="submit" value="SEND"/>
+           </div>
 
-       </div>
-        </form>
+           </div>
+            </form>
 
-       <div class="my-info">
-         <img src="images/pic1.jpg" alt="photo">
-         <p><a href="https://www.linkedin.com/in/awilliams330" target="_blank">linkedin.com/in/awilliams330</a></p>
-         <p><a href="mailto:ashley@theashleywilliams.com?subject=feedback">ashley@theashleywilliams.com</a></p>
-       </div>
+           <div class="my-info">
+             <img src="images/pic1.jpg" alt="photo">
+             <p><a href="https://www.linkedin.com/in/awilliams330" target="_blank">linkedin.com/in/awilliams330</a></p>
+             <p><a href="mailto:ashley@theashleywilliams.com?subject=feedback">ashley@theashleywilliams.com</a></p>
+           </div>
+        </section>
+
     </main>
 
     <footer class="footer">
