@@ -46,6 +46,7 @@ main {
 }
 
 
+
 /* ***********************HAMBURGER MENU STYLES******************************** */
 .hamburger{
   background:none;
@@ -91,9 +92,9 @@ main {
 .home-logo {
 	display: block;
 	width: 80%;
-	padding: 10%;
+	padding: 6% 0 0 0;
 	margin: 0 auto;
-	max-width: 500px;
+	max-width: 775px;
 }
 
 h1 {
@@ -140,36 +141,9 @@ input[type=submit] {
   font-weight: bold;
 }
 
-
-.menu ul li a {
-  color: black;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.menu ul li a:hover {
-  color: #F58B8B;
-}
-
-.menu {
-  max-width: 100%;
-  margin: 0 auto;
-  background: #E5E5E5;
-  padding-left: 10px;
-}
-
-
-
 img {
   display: inline;
   min-width: 200px;
-}
-
-form {
-  position: relative;
-  right: 100px;
-  float: left;
 }
 
 .my-info {
@@ -184,13 +158,6 @@ form {
   text-decoration: none;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background: #E5E5E5;
-}
 
 .about-image {
   float: left;
@@ -209,25 +176,9 @@ form {
   padding-top: 30px;
 }
 
-.about::after {
-  content: "Yes, I'm that dog mom.";
-  font-size: 15px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: lightblue;
-  padding-top: 15px;
-}
-
-.home-logo {
-  position: absolute;
-  margin-left: 400px;
-  margin-right: 400px;
-  animation: float 2s linear;
-}
 
 .intro {
   margin: 0 auto;
-  padding-top: 400px;
-  animation: fade 7s;
 }
 
 div.gallery img {
@@ -249,30 +200,6 @@ div.gallery img {
   transition: 1s ease;
 }
 
-
-
-
-
-
-
-
-@keyframes float {
-  from {
-    left: -900px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /* ***********************HAMBURGER MENU STYLES******************************** */
 .hamburger{
@@ -331,6 +258,12 @@ div.gallery img {
 		font-size: 20px;
 	}
 
+	.desktop-menu ul {
+		display: flex;
+		justify-content: space-evenly;
+		font-size: 30px;
+}
+
 	.desktop-menu ul li a {
 		color: black;
 		display: block;
@@ -347,6 +280,7 @@ div.gallery img {
 		width: 24%;
 		text-align: center;
 		text-decoration: none;
+
 	}
 
 	section > p {
@@ -359,17 +293,6 @@ div.gallery img {
 /* *********************** START MIN WIDTH 850 MEDIA QUERY ******************************** */
 @media (min-width: 850px) {
 
-	section {
-		float: right;
-		width: 58%;
-		padding-top: 17%;
-	}
-
-	aside {
-		float: left;
-		width: 30%;
-		padding: 5% 2%;
-	}
 
 	footer {
 		clear: both;
@@ -391,25 +314,53 @@ div.gallery img {
 
 @media (min-width: 1030px) {
 
-	h1 {
-		font-size: 40px;
+	.page {
+		max-width: 1115px;
+		margin: 0 auto;
 	}
 
-	section {
-		padding: 2% 5% 0 1%;
+	h1 {
+		font-size: 45px;
 	}
+
+	.desktop-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+		font-size: 30px;
+}
+
 
 	h2 {
-		font-size: 34px;
+		font-size: 37px;
 	}
 
 	section > p {
 		font-size: 25px;
 	}
 
+	section.about {
+		float: right;
+		width: 57%;
+	}
+
+
 	figure {
 		padding-left: 11%;
 	}
+
+	section.images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+    justify-content: center;
+	}
+
+	.contact-page {
+		text-align: left;
+		display: flex;
+		justify-content: center;
+	}
+
 }
 
 /* *********************** END MIN WIDTH 1030 MEDIA QUERY ******************************** */
