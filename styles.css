@@ -17,6 +17,20 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
   */
 
+/* STICKY FOOTER */
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1;
+}
+/* STICKY FOOTER */
+
+
 body {
   background: #0D4260;
 	font-family: 'Josefin Sans', sans-serif;
@@ -314,8 +328,8 @@ div.gallery img {
 
 @media (min-width: 1030px) {
 
-	.page {
-		max-width: 1115px;
+	.site-content {
+		max-width: 1050px;
 		margin: 0 auto;
 	}
 
@@ -351,7 +365,7 @@ div.gallery img {
 	section.images {
     display: flex;
     flex-wrap: wrap;
-    padding: 2% 6%;
+    padding: 2% 8%;
     justify-content: center;
 	}
 
@@ -359,6 +373,10 @@ div.gallery img {
 		text-align: left;
 		display: flex;
 		justify-content: center;
+	}
+
+	.my-info p {
+		padding-top: 3%;
 	}
 
 }
