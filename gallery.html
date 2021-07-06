@@ -9,67 +9,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Reem+Kufi&display=swap" rel="stylesheet">
 
-    <!-- Link to CSS and Favicon -->
+
+    <!-- Link to Stylesheet -->
     <link type="text/css "rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Link to CSS and Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+		<link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+
   </head>
 
 
   <body class="site">
 
-  <header>
-    <button class="hamburger">&#9776;</button>
-    <button class="cross">&#735;</button>
+    <header>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
 
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-
-      <nav class="desktop-menu">
+      <nav class="menu">
         <ul>
-          <li class="menu-item"><a href="index.html">HOME</a></li>
-          <li class="menu-item"><a href="about.html">ABOUT</a></li>
-          <li class="menu-item"><a href="gallery.html">GALLERY</a></li>
-          <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main class="site-content">
+        <nav class="desktop-menu">
+          <ul>
+            <li class="menu-item"><a href="index.html">HOME</a></li>
+            <li class="menu-item"><a href="about.html">ABOUT</a></li>
+            <li class="menu-item"><a href="gallery.html">GALLERY</a></li>
+            <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <div class="gallery">
-        <h1>GALLERY</h1>
+      <main class="site-content">
 
-        <section class="images">
-          <a href="images/portiko.png" data-lightbox="image-1" data-title="Portiko Technologies Logo"><img src="images/portiko.png" alt="Portiko Logo" title="Portiko Logo"></a>
+        <div class="gallery">
+          <h1>GALLERY</h1>
 
-          <a href="images/gedc.png" data-lightbox="image-1" data-title="Gainesville Economic Development Council Logo"><img src="images/gedc.png" alt="GEDC Logo" title="GEDC Logo"></a>
+          <section class="images">
+            <a href="images/portiko.png" data-lightbox="image-1" data-title="Portiko Technologies Logo"><img src="images/portiko.png" alt="Portiko Logo" title="Portiko Logo"></a>
 
-          <a href="images/bcg-new.png" data-lightbox="image-1" data-title="BCG New User Homepage"><img src="images/bcg-new.png" alt="BCG 1" title="BCG 1"></a>
+            <a href="images/gedc.png" data-lightbox="image-1" data-title="Gainesville Economic Development Council Logo"><img src="images/gedc.png" alt="GEDC Logo" title="GEDC Logo"></a>
 
-          <a href="images/bcg-enrolled.png" data-lightbox="image-1" data-title="BCG Enrolled User Homepage"><img src="images/bcg-enrolled.png" alt="BCG 2" title="BCG 2"></a>
-        </section>
-    </div>
+            <a href="images/bcg-new.png" data-lightbox="image-1" data-title="BCG New User Homepage"><img src="images/bcg-new.png" alt="BCG 1" title="BCG 1"></a>
 
-    </main>
+            <a href="images/bcg-enrolled.png" data-lightbox="image-1" data-title="BCG Enrolled User Homepage"><img src="images/bcg-enrolled.png" alt="BCG 2" title="BCG 2"></a>
+          </section>
+      </div>
 
-    <footer class="footer">
-      <p>Designed by Ashley Williams</p>
-    </footer>
+      </main>
 
-    <script src="lightbox/src/js/lightbox.js"></script>
-    <script src="js/hamburger.js"></script>
+      <footer class="footer">
+        <p>Designed by Ashley Williams</p>
+      </footer>
+
+      <script src="lightbox/src/js/lightbox.js"></script>
+
+      <script src="js/hamburger.js"></script>
+
   </body>
 </html>
