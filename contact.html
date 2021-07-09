@@ -40,16 +40,24 @@
 
     <nav class="desktop-menu">
         <ul>
-          <li class="fadeOutlink"><a href="index.html">HOME</a></li>
-          <li class="fadeOutlink"><a href="about.html">ABOUT</a></li>
-          <li class="fadeOutlink"><a href="gallery.html">GALLERY</a></li>
-          <li class="fadeOutlink"><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
     </header>
 
     <main class="site-content">
-      <h1>CONTACT ME</h1>
+
+      <h1 class="ml10">
+        <span class="text-wrapper">
+          <span class="letters">CONTACT ME</span>
+        </span>
+      </h1>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
         <section class="contact-page">
           <form id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
           <div class="container">
@@ -94,6 +102,7 @@
       <p>Designed by Ashley Williams</p>
     </footer>
 
+    <script src="js/moving-letters.js"></script>
     <script src="js/hamburger.js"></script>
   </body>
 </html>
